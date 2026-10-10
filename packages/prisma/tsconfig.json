@@ -1,11 +1,3 @@
 {
-    "extends": "@repo/typescript-config/base.json",
-    "compilerOptions": {
-        "outDir": "dist",
-        "rootDir": "src",
-        "baseUrl": ".",
-        "paths": {
-            "@repo/prisma/*": ["./*"]
-        }
-    },
+    "extends" : "@repo/typescript-config/base.json",
 }
