@@ -18,7 +18,14 @@ importers:
         specifier: 7.0.2
         version: 7.0.2
 
-  apps/http-backend: {}
+  apps/http-backend:
+    devDependencies:
+      '@repo/prisma':
+        specifier: workspace:*
+        version: link:../../packages/prisma
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:../../packages/typescript-config
 
   apps/web:
     dependencies:
@@ -38,6 +45,9 @@ importers:
       '@repo/eslint-config':
         specifier: workspace:*
         version: link:../../packages/eslint-config
+      '@repo/prisma':
+        specifier: workspace:*
+        version: link:../../packages/prisma
       '@repo/typescript-config':
         specifier: workspace:*
         version: link:../../packages/typescript-config
@@ -56,6 +66,15 @@ importers:
       typescript:
         specifier: 7.0.2
         version: 7.0.2
+
+  apps/ws-backend:
+    devDependencies:
+      '@repo/prisma':
+        specifier: workspace:*
+        version: link:../../packages/prisma
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:../../packages/typescript-config
 
   packages/eslint-config:
     devDependencies:
